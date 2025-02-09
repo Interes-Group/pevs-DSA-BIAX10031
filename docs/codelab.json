@@ -1,7 +1,7 @@
 {
   "environment": "web",
   "format": "html",
-  "prefix": "https://github.com/interes-group",
+  "prefix": "https://storage.googleapis.com",
   "updated": "2025-02-09T22:31:51+01:00",
   "id": "cvicenie-01",
   "duration": 0,
