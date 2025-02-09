@@ -4,7 +4,7 @@ categories: cvicenie
 tags: beginner
 status: Published
 authors: Milan Mladoniczky
-feedback link: https://github.com/interes-group/pevs-__-codelabs/issues
+feedback link: https://github.com/interes-group/pevs-DSA-BIAX10031/issues
 
 # Cvičenie 01
 

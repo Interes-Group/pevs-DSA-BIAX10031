@@ -264,7 +264,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+#docs
 
 # Gatsby files
 .cache/
@@ -316,7 +316,7 @@ gen
 ### Vuejs template
 # Recommended template: Node.gitignore
 
-dist/
+#docs/
 npm-debug.log
 yarn-error.log
 
