@@ -1,0 +1,161 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Cvičenie 01</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://github.com/interes-group/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="cvicenie-01"
+                  title="Cvičenie 01"
+                  environment="web"
+                  feedback-link="https://github.com/interes-group/pevs-__-codelabs/issues">
+    
+      <google-codelab-step label="Úvod" duration="0">
+        <p>Toto cvičenie je zamerané na precvičenie základných konceptov programovania v jazyku C++. Budete pracovať s rôznymi dátovými typmi, štandardným vstupom a výstupom, dynamickou alokáciou pamäte, poľami, reťazcami, konštantami a vlastnými funkciami. Cieľom je posilniť ich pochopenie týchto konceptov a pripraviť ich na riešenie zložitejších problémov.</p>
+<h2 is-upgraded>Obsah</h2>
+<ul>
+<li>štandardný vstup a výstup</li>
+<li>práca s dynamicky alokovanými poliami</li>
+<li>práca s dátovým typom string</li>
+</ul>
+<aside class="warning"><p> Ak používate ako vývojové prostredie lokálny a editor a následnú kompiláciu cez terminál. Použite príkaz:</p>
+<pre><code language="language-shell" class="language-shell">g++ -o program -Wall -Wextra main.cpp
+</code></pre>
+</aside>
+<p>Pre vypracovanie týchto úloh odporúčam mať funkčné lokálne vývojové prostredie (VS Code, CLion a pod.) a kompilátor jazyka C++.</p>
+<aside class="warning"><p> Nezabudnite každú alokovanú pamäť uvoľniť volaním operátorom <code>delete <premenná></code>! Je dôležité si po sebe vždy upratať.</p>
+</aside>
+<p>Riešenia na jednotlivé úlohy budú uverejnené neskôr.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Úloha 1.1" duration="0">
+        <p>Napíšte program, zdrojový kód, v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta celé číslo <code>n</code> zo štandardného vstupu a následne načíta <code>n</code> celých čísel. Vypočíta ich súčet a priemer ( zaokrúhlený nadol na celé číslo) a vypíše ich na štandardný výstup.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Vstup</h3>
+<pre><code language="language-text" class="language-text">6
+5 10 20 30 40 50
+</code></pre>
+<h3 is-upgraded>Výstup</h3>
+<pre><code language="language-text" class="language-text">Súčet: 150 
+Priemer: 30
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Úloha 1.2" duration="0">
+        <p>Napíšte program, zdrojový kód, v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta celé číslo <code>n</code>, ktoré predstavuje počet prvkov v poli. Následne alokuje dynamické pole veľkosti <code>n</code>, načíta <code>n</code> celých čísel a následne vypíše všetky párne čísla v poradí, v akom boli zadané.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Vstup</h3>
+<pre><code language="language-text" class="language-text">7
+6 1 2 3 4 5 6
+</code></pre>
+<h3 is-upgraded>Výstup</h3>
+<pre><code language="language-text" class="language-text">2 4 6
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Úloha 1.3" duration="0">
+        <p>Napíšte program, zdrojový kód, v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta celé číslo <code>n</code> zo štandardného vstupu, ktoré predstavuje počet riadkov a stĺpcov štvorcovej matice. Následne alokuje dynamickú dvojrozmernú maticu veľkosti <code>n x n</code> a načíta do nej celé čísla po riadkoch (t.j. načíta <code>n</code> čísel prvého riadku, potom ďalší atď.). Program potom transponuje túto maticu (vymení riadky za stĺpce) a vypíše transponovanú maticu na štandardný výstup.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Vstup</h3>
+<pre><code language="language-text" class="language-text">3
+3 1 2
+3 4 5
+6 7 8
+</code></pre>
+<h3 is-upgraded>Výstup</h3>
+<pre><code language="language-text" class="language-text">3 3 6
+1 4 7
+2 5 8
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Úloha 1.4" duration="0">
+        <p>Napíšte program v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta reťazec zo štandardného vstupu a zistí, či je tento reťazec palindróm (t.j. číta sa rovnako spredu aj zozadu). Implementujte funkciu <code>bool je_palindrom(const std::string& text)</code>, ktorá vráti hodnotu <code>true</code>, ak je reťazec palindróm, inak vráti <code>false</code>. V programe použite vhodné konštanty tam, kde je to potrebné.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Príklad 1</h3>
+<ul>
+<li>Vstup: <code>radar</code></li>
+<li>Výstup: <code>Reťazec 'radar' je palindróm.</code></li>
+</ul>
+<h3 is-upgraded>Príklad 2</h3>
+<ul>
+<li>Vstup: <code>programovanie</code></li>
+<li>Výstup: <code>Reťazec 'programovanie' nie je palindróm.</code></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Úloha 1.5" duration="0">
+        <p>Napíšte program v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta dva reťazce zo štandardného vstupu a zistí, či sú tieto reťazce anagramy (t.j. obsahujú rovnaké znaky v rovnakom počte, ale v rôznom poradí). Implementujte funkciu <code>bool su_anagramy(const std::string& prvy, const std::string& druhy)</code>, ktorá vráti hodnotu <code>true</code>, ak sú reťazce anagramy, inak vráti <code>false</code>. V programe použite vhodné konštanty tam, kde je to potrebné.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Príklad 1</h3>
+<ul>
+<li>Vstup: <code>listen silent</code></li>
+<li>Výstup: <code>Reťazce 'listen' a 'silent' sú anagramy.</code></li>
+</ul>
+<h3 is-upgraded>Príklad 2</h3>
+<ul>
+<li>Vstup: <code>hello world</code></li>
+<li>Výstup: <code>Reťazce 'hello' a 'world' nie sú anagramy.</code></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="✨ Úloha 1.6" duration="0">
+        <p>Napíšte program v jazyku C++ použitím štandardu C++17, ktorý realizuje nasledovnú činnosť.</p>
+<p>Program načíta celé číslo <code>n</code> zo štandardného vstupu, ktoré predstavuje počet prvkov v poli. Následne alokuje dynamické pole veľkosti <code>n</code> a načíta do neho <code>n</code> celých čísel. Program potom nájde najdlhšiu postupnosť po sebe idúcich prvkov, ktoré sú v neklesajúcom poradí (každý nasledujúci prvok je rovnaký alebo väčší ako predchádzajúci), a vypíše dĺžku tejto postupnosti.</p>
+<h2 is-upgraded>Príklady vstupov / výstupov programu</h2>
+<h3 is-upgraded>Vstup</h3>
+<pre><code language="language-text" class="language-text">11
+10 5 3 4 4 5 6 2 2 2 3
+</code></pre>
+<h3 is-upgraded>Výstup</h3>
+<pre><code language="language-text" class="language-text">Najdlhšia neklesajúca postupnosť má dĺžku: 4
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://github.com/interes-group/claat-public/native-shim.js"></script>
+  <script src="https://github.com/interes-group/claat-public/custom-elements.min.js"></script>
+  <script src="https://github.com/interes-group/claat-public/prettify.js"></script>
+  <script src="https://github.com/interes-group/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
